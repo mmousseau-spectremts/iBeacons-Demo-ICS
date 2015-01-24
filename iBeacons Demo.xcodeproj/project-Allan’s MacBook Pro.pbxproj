@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4963E320186D1CA800B048B6 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4963E31F186D1CA800B048B6 /* libTestFlight.a */; };
-		4963E322186D1DB500B048B6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4963E321186D1DB500B048B6 /* libz.dylib */; };
+		499221DB18651F47002FA5BE /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 499221D718651F47002FA5BE /* libTestFlight.a */; };
+		499221DC18651F47002FA5BE /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 499221D718651F47002FA5BE /* libTestFlight.a */; };
+		499221DE18653103002FA5BE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 499221DD18653103002FA5BE /* libz.dylib */; };
 		C9AF590017F5678D00792F91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF58FF17F5678D00792F91 /* Foundation.framework */; };
 		C9AF590217F5678D00792F91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF590117F5678D00792F91 /* CoreGraphics.framework */; };
 		C9AF590417F5678D00792F91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF590317F5678D00792F91 /* UIKit.framework */; };
@@ -40,8 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4963E31F186D1CA800B048B6 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		4963E321186D1DB500B048B6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		499221D718651F47002FA5BE /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		499221D818651F47002FA5BE /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		499221D918651F47002FA5BE /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		499221DA18651F47002FA5BE /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		499221DD18653103002FA5BE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C9AF58FC17F5678D00792F91 /* iBeacons Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iBeacons Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AF58FF17F5678D00792F91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9AF590117F5678D00792F91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,8 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4963E322186D1DB500B048B6 /* libz.dylib in Frameworks */,
-				4963E320186D1CA800B048B6 /* libTestFlight.a in Frameworks */,
+				499221DE18653103002FA5BE /* libz.dylib in Frameworks */,
+				499221DB18651F47002FA5BE /* libTestFlight.a in Frameworks */,
 				C9AF593717F567A800792F91 /* CoreBluetooth.framework in Frameworks */,
 				C9AF593517F5679F00792F91 /* CoreLocation.framework in Frameworks */,
 				C9AF590217F5678D00792F91 /* CoreGraphics.framework in Frameworks */,
@@ -91,6 +95,7 @@
 				C9AF591F17F5678D00792F91 /* XCTest.framework in Frameworks */,
 				C9AF592117F5678D00792F91 /* UIKit.framework in Frameworks */,
 				C9AF592017F5678D00792F91 /* Foundation.framework in Frameworks */,
+				499221DC18651F47002FA5BE /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +105,10 @@
 		C9AF58F317F5678D00792F91 = {
 			isa = PBXGroup;
 			children = (
+				499221D718651F47002FA5BE /* libTestFlight.a */,
+				499221D818651F47002FA5BE /* TestFlight.h */,
+				499221D918651F47002FA5BE /* TestFlight+AsyncLogging.h */,
+				499221DA18651F47002FA5BE /* TestFlight+ManualSessions.h */,
 				C9AF590517F5678D00792F91 /* iBeacons Demo */,
 				C9AF590617F5678D00792F91 /* Supporting Files */,
 				C9AF592417F5678D00792F91 /* iBeacons DemoTests */,
@@ -120,8 +129,7 @@
 		C9AF58FE17F5678D00792F91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4963E321186D1DB500B048B6 /* libz.dylib */,
-				4963E31F186D1CA800B048B6 /* libTestFlight.a */,
+				499221DD18653103002FA5BE /* libz.dylib */,
 				C9AF593617F567A800792F91 /* CoreBluetooth.framework */,
 				C9AF593417F5679F00792F91 /* CoreLocation.framework */,
 				C9AF58FF17F5678D00792F91 /* Foundation.framework */,
@@ -226,6 +234,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Mobient;
 				TargetAttributes = {
+					C9AF58FB17F5678D00792F91 = {
+						DevelopmentTeam = FGHNMB3FZ8;
+					};
 					C9AF591C17F5678D00792F91 = {
 						TestTargetID = C9AF58FB17F5678D00792F91;
 					};
@@ -407,14 +418,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBeacons Demo/iBeacons Demo-Prefix.pch";
 				INFOPLIST_FILE = "iBeacons Demo/iBeacons Demo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/marc/SkyDrive/ICS/iBeacons\\ Demo\\ ICS",
+					"/Users/marc/SkyDrive/ICS/iBeacons\\ Demo",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -424,14 +439,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBeacons Demo/iBeacons Demo-Prefix.pch";
 				INFOPLIST_FILE = "iBeacons Demo/iBeacons Demo-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/marc/SkyDrive/ICS/iBeacons\\ Demo\\ ICS",
+					"/Users/marc/SkyDrive/ICS/iBeacons\\ Demo",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -453,6 +472,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "iBeacons DemoTests/iBeacons DemoTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/marc/SkyDrive/ICS/iBeacons\\ Demo",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -472,6 +495,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBeacons Demo/iBeacons Demo-Prefix.pch";
 				INFOPLIST_FILE = "iBeacons DemoTests/iBeacons DemoTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/marc/SkyDrive/ICS/iBeacons\\ Demo",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
